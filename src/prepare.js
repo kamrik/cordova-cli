@@ -88,7 +88,7 @@ module.exports = function prepare(options) {
                 // Create platfom_www if project was created with older version.
                 if (!fs.existsSync(platform_www)) {
                     shell.mkdir(platform_www);
-                    shell.cp(parser.cordovajs_path(libDir), platform_www);
+                    shell.cp(parser.cordovajs_path(libDir), path.join(platform_www, 'cordova.js'));
                 }
 
                 // Replace the existing web assets with the app master versions
