@@ -47,9 +47,8 @@ module.exports = function CLI(inputArgs) {
         .boolean('v')
         .boolean('version')
         .boolean('silent')
-        .string('src')
-        .alias('src', 'source')
-        .string('link')
+        .string('copy-from')
+        .string('link-to')
         .string('searchpath')
         .argv;
 
@@ -136,7 +135,7 @@ module.exports = function CLI(inputArgs) {
         if (args._[4]) {
             cfg = JSON.parse(args._[4]);
         }
-        var customWww = args.src || args.link;
+        var customWww = args['copy-from'] || args['link-to'];
         if (customWww) {
             if (customWww.indexOf(':') != -1) {
                 throw new CordovaError('Only local paths for custom www assets are supported.');
@@ -146,7 +145,7 @@ module.exports = function CLI(inputArgs) {
             }
             customWww = path.resolve(customWww);
             var wwwCfg = {uri: customWww};
-            if (args.link) {
+            if (args['link-to']) {
                 wwwCfg.link = true;
             }
             cfg.lib = cfg.lib || {};
