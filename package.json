@@ -1,5 +1,5 @@
 {
-  "name": "cordova",
+  "name": "cordova-tmp4cca",
   "version": "3.5.0-0.2.6",
   "preferGlobal": "true",
   "description": "Cordova command line interface tool",
@@ -28,7 +28,7 @@
     "cli"
   ],
   "dependencies": {
-    "cordova-lib": "0.21.6",
+    "cordova-lib-tmp4cca": "0.21.6",
     "q": "~0.9",
     "nopt": "~2",
     "underscore":"1.4.4"
