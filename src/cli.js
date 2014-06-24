@@ -85,7 +85,7 @@ function cli(inputArgs) {
         return;
     }
 
-    var cordova_lib = require('cordova-lib'),
+    var cordova_lib = require('cordova-lib-tmp4cca'),
         CordovaError = cordova_lib.CordovaError,
         cordova = cordova_lib.cordova,
         events = cordova_lib.events;

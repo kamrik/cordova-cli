@@ -16,7 +16,7 @@
     specific language governing permissions and limitations
     under the License.
 */
-var cordova_lib = require('cordova-lib'),
+var cordova_lib = require('cordova-lib-tmp4cca'),
     cordova = cordova_lib.cordova,
     help = require('../src/help');
 

@@ -28,7 +28,7 @@
     "cli"
   ],
   "dependencies": {
-    "cordova-lib-tmp4cca": "0.21.6",
+    "cordova-lib-tmp4cca": "0.21.7",
     "q": "~0.9",
     "nopt": "~2",
     "underscore":"1.4.4"

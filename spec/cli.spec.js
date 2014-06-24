@@ -19,7 +19,7 @@
 
 var cli = require("../src/cli"),
     Q = require('q'),
-    cordova_lib = require('cordova-lib'),
+    cordova_lib = require('cordova-lib-tmp4cca'),
     events = cordova_lib.events,
     cordova = cordova_lib.cordova;
 
